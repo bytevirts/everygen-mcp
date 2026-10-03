@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "everygen": {
+      "type": "http",
+      "url": "https://everygen-ai.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.bytevirts/everygen",
+  "title": "Everygen",
+  "description": "Create images, videos, narration, music and multi-shot video projects with Everygen.",
+  "version": "1.0.0",
+  "websiteUrl": "https://everygen-ai.com",
+  "repository": {
+    "url": "https://github.com/bytevirts/everygen-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://everygen-ai.com/mcp"
+    }
+  ]
+}

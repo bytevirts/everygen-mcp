@@ -1,0 +1,19 @@
+{
+  "name": "everygen",
+  "displayName": "Everygen",
+  "version": "1.0.0",
+  "description": "Create images, videos, narration, music and multi-shot stories with your Everygen account.",
+  "author": {
+    "name": "Everygen",
+    "email": "support@everygen-ai.com",
+    "url": "https://everygen-ai.com"
+  },
+  "homepage": "https://everygen-ai.com",
+  "repository": "https://github.com/bytevirts/everygen-mcp",
+  "keywords": ["image-generation", "video-generation", "voiceover", "music", "mcp"],
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://github.com/bytevirts/everygen-mcp#readme",
+  "supportUrl": "https://everygen-ai.com/support",
+  "privacyPolicyUrl": "https://everygen-ai.com/privacy-policy",
+  "termsOfServiceUrl": "https://everygen-ai.com/terms-of-service"
+}
