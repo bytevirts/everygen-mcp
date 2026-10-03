@@ -46,7 +46,15 @@ Connect and complete the OAuth flow when prompted. The plugin declares the same 
 
 ### Cline and other clients
 
-Use the client's remote Streamable HTTP MCP connection flow with `https://everygen-ai.com/mcp`. The client must support OAuth authorization code with PKCE. Complete the browser authorization and then list tools to verify the connection. Consult the client's documentation for its configuration field names; they differ between clients.
+Cline CLI can install the remote connection with:
+
+```sh
+cline mcp add everygen https://everygen-ai.com/mcp --transport http --yes
+```
+
+In the Cline extension, open **MCP Servers → Remote Servers**, enter `Everygen` and the endpoint, choose **Streamable HTTP**, and add the server. For JSON configuration, see [`clients/cline.json`](clients/cline.json); Cline spells this transport `streamableHttp`.
+
+The client must support OAuth authorization code with PKCE. Complete the browser authorization and then list tools to verify the connection. Other MCP clients use the same endpoint; consult their documentation for configuration field names.
 
 ## First verification
 
@@ -79,3 +87,7 @@ This public repository contains connection metadata, documentation and brand ass
 - [Privacy policy](https://everygen-ai.com/privacy-policy)
 - [Terms of service](https://everygen-ai.com/terms-of-service)
 - Contact: `support@everygen-ai.com`
+
+## Verification record
+
+On 2026-10-03, Cline CLI 3.0.68 accepted the installation command above with `status: installed`, `transport: streamableHttp`, and no warnings; its configuration query found the server. Separately, an authenticated check with the official TypeScript MCP SDK discovered 17 tools and successfully called `everygen_get_capabilities` without generating media. These checks do not claim a recorded end-to-end creation in Cline or approval by any marketplace.

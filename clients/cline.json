@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "everygen": {
+      "type": "streamableHttp",
+      "url": "https://everygen-ai.com/mcp",
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
